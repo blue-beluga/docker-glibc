@@ -3,10 +3,11 @@
 FROM <%= ENV.fetch('FROM') %>
 MAINTAINER The Blue Beluga <admin@bluebeluga.io>
 
-LABEL name="glibc"
-LABEL description="Alpine Linux Base with glibc"
-LABEL version="<%= ENV.fetch('ALPINE_GLIBC_PACKAGE_VERSION') %>"
-LABEL git_revision="<%= ENV.fetch('GIT_REVISION') %>"
+LABEL vendor="The Blue Beluga Company"
+LABEL io.bluebeluga.glibc.description="glibc"
+LABEL io.bluebeluga.glibc.version="<%= ENV.fetch('TAG') %>"
+LABEL io.bluebeluga.glibc.git-revision="<%= ENV.fetch('GIT_REVISION') %>"
+LABEL io.bluebeluga.glibc.release-date="<%= Time.now.strftime('%B %d, %Y %H:%M') %>"
 
 ENV ALPINE_GLIBC_PACKAGE_VERSION <%= ENV.fetch('ALPINE_GLIBC_PACKAGE_VERSION') %>
 RUN ALPINE_GLIBC_BASE_URL="https://github.com/andyshinn/alpine-pkg-glibc/releases/download" && \

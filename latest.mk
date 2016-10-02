@@ -1,1 +1,3 @@
-LATEST_TAG = 2.23-r2
+# encoding: UTF-8
+
+LATEST_TAG = 2.23-r3
