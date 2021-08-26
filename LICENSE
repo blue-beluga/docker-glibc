@@ -1,55 +1,3 @@
-
-![bluebeluga/alpine](https://raw.githubusercontent.com/blue-beluga/docker-glibc/master/docs/images/bluebeluga.png)
-
-# bluebeluga/glibc
-
-A minimalist [Alpine Linux](http://alpinelinux.org/) container, that contains glibc to enable compiled tools (e.g. OracleJDK) work on Alpine.
-
-
-## Installation and Usage
-
-```
-docker pull bluebeluga/glibc
-docker run bluebeluga/glibc [options]
-```
-
-## Available Tags
-
-* `latest`: **Currently 2.34-r0**
-* `2.23-r1`
-* `2.34-r0`
-
-## Build
-
-Build the container:
-
-    make build
-
-## Test
-
-Run automated tests on one or more instances:
-
-    make test
-
-## Push
-
-Push image or a repository to the registry:
-
-    make push
-
-## Clean
-
-Stop and remove build artifacts and images:
-
-    make clean
-
-## Contributing
-
-Please see the [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## License and Authors
-
-```
 MIT License
 
 Copyright (c) 2016 The Blue Beluga Company
@@ -71,4 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
