@@ -1,9 +1,13 @@
 # encoding: UTF-8
 
-GIT_REVISION=$(shell git rev-parse --short HEAD)
+FROM_REGISTRY=docker.io
+FROM_REPOSITORY=bluebeluga/alpine
+FROM_TAG=3.14.1
+ALPINE_VERSION=3.14
 
-REGISTRY = docker.io
-FROM = bluebeluga/alpine
-REPOSITORY = bluebeluga/glibc
+REGISTRY=docker.io
+REPOSITORY=bluebeluga/glibc
 
-PUSH_REGISTRIES = $(REGISTRY)
+PUSH_REGISTRIES=$(REGISTRY)
+
+VERSION=2.34-r0

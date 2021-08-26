@@ -1,3 +1,71 @@
-.docker/config.json
-versions/*/Dockerfile
-versions/*/.build
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Linux ###
+*~
+.directory
+.vagrant/
+
+### Packer ###
+packer_cache/
+*.box
+
+### TextMate ###
+*.tmproj
+*.tmproject
+tmtags
+tmtagsHistory
+
+### SublimeText ###
+*.sublime-workspace
+sftp-config.json
+
+### vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+*.swp
+
+#### Bundler ###
+.bundle/*
+
+#### Ignore build cruft and secrets ###
+versions/
+.docker/config.env
+.envrc
+
+#### Inspec lockfile ###
+inspec.lock
